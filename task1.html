@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>ShopEasy</title>
+<style>
+body {font-family: Arial; margin: 0; background: #f4f4f4;}
+nav {background: #222; color: white; padding: 15px;}
+nav a {color: white; margin: 12px; text-decoration: none;}
+.banner {background: orange; padding: 20px; text-align: center;}
+.products {display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; padding: 20px;}
+.card {background: white; padding: 15px; width: 200px; text-align: center; border-radius: 8px;}
+.card img {width: 100%; height: 130px; object-fit: contain;}
+button {background: green; color: white; padding: 10px; border: none; cursor: pointer;}
+</style>
+</head>
+<body>
+
+<nav>
+<b>ShopEasy</b>
+<a href="#">Home</a>
+<a href="#">Categories</a>
+<a href="#">Products</a>
+<a href="#">Cart 🛒</a>
+</nav>
+
+<div class="banner">
+<h2>Big Sale! Up to 50% OFF</h2>
+<p>Shop your favourite products today!</p>
+</div>
+
+<div class="products">
+<div class="card">
+<img src="https://placehold.co/200x130?text=Headphones">
+<h3>Headphones</h3>
+<p>Clear sound quality</p>
+<p>⭐ 4.5 | <del>₹2000</del> ₹999</p>
+<button onclick="alert('Added to cart!')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/200x130?text=Watch">
+<h3>Smart Watch</h3>
+<p>Stylish and smart</p>
+<p>⭐ 4.2 | <del>₹3000</del> ₹1499</p>
+<button onclick="alert('Added to cart!')">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://placehold.co/200x130?text=Shoes">
+<h3>Shoes</h3>
+<p>Comfortable footwear</p>
+<p>⭐ 4.6 | <del>₹2500</del> ₹1299</p>
+<button onclick="alert('Added to cart!')">Add to Cart</button>
+</div>
+</div>
+
+</body>
+</html>
