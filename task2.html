@@ -1,0 +1,165 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Care Hospital</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4fafa;
+            color: #333;
+        }
+        header {
+            background: #008b8b;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background: #006666;
+            padding: 12px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 10px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .card {
+            display: inline-block;
+            background: white;
+            padding: 18px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px #ccc;
+            vertical-align: top;
+        }
+        input, select, textarea, button {
+            width: 90%;
+            padding: 10px;
+            margin: 8px;
+            box-sizing: border-box;
+        }
+        button {
+            background: #008b8b;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        footer {
+            background: #006666;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+        @media (max-width: 600px) {
+            nav a { display: inline-block; }
+            .card { width: 80%; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>City Care Hospital</h1>
+    <p>Your Health, Our Priority</p>
+</header>
+
+<nav>
+    <a href="#departments">Departments</a>
+    <a href="#doctors">Doctors</a>
+    <a href="#facilities">Facilities</a>
+    <a href="#appointment">Appointment</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section>
+    <h2>Welcome to Our Hospital</h2>
+    <p>We provide quality healthcare with care and compassion.</p>
+</section>
+
+<section id="departments">
+    <h2>Our Departments</h2>
+    <div class="card">❤️<h3>Cardiology</h3><p>Heart care</p></div>
+    <div class="card">🩺<h3>General Medicine</h3><p>General health</p></div>
+    <div class="card">🦴<h3>Orthopedics</h3><p>Bone care</p></div>
+    <div class="card">👶<h3>Pediatrics</h3><p>Child care</p></div>
+</section>
+
+<section id="doctors">
+    <h2>Our Doctors</h2>
+    <div class="card">
+        <h3>Dr. Ravi Kumar</h3>
+        <p>Heart Specialist</p>
+    </div>
+    <div class="card">
+        <h3>Dr. Priya Sharma</h3>
+        <p>General Physician</p>
+    </div>
+    <div class="card">
+        <h3>Dr. Arun Kumar</h3>
+        <p>Bone Specialist</p>
+    </div>
+</section>
+
+<section id="facilities">
+    <h2>Our Facilities</h2>
+    <div class="card">24/7 Emergency Care</div>
+    <div class="card">Modern Laboratories</div>
+    <div class="card">Pharmacy</div>
+    <div class="card">Ambulance Service</div>
+    <h3>Visiting Hours</h3>
+    <p>Daily: 10:00 AM – 12:00 PM and 4:00 PM – 6:00 PM</p>
+</section>
+
+<section id="appointment">
+    <h2>Book an Appointment</h2>
+    <form onsubmit="event.preventDefault(); alert('Appointment request submitted!');">
+        <label for="name">Full Name</label><br>
+        <input id="name" type="text" placeholder="Enter your name" required><br>
+
+        <label for="phone">Phone Number</label><br>
+        <input id="phone" type="tel" placeholder="Enter phone number"
+               required><br>
+
+        <label for="department">Choose Department</label><br>
+        <select id="department" required>
+            <option value="">Select Department</option>
+            <option>Cardiology</option>
+            <option>General Medicine</option>
+            <option>Orthopedics</option>
+            <option>Pediatrics</option>
+        </select><br>
+
+        <label for="date">Appointment Date</label><br>
+        <input id="date" type="date" required><br>
+
+        <label for="message">Message</label><br>
+        <textarea id="message" placeholder="Your message"></textarea><br>
+
+        <button type="submit">Submit Request</button>
+    </form>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p>Emergency Contact: 108 (India ambulance service)</p>
+    <p>Hospital Phone: 000-123-4567 (sample number)</p>
+    <p>Email: citycare@example.com (sample email)</p>
+    <p>Address: Main Road, Your City</p>
+</section>
+
+<footer>
+    <p>© 2026 City Care Hospital. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
